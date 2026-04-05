@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Пакетик нужен? — Стильные пакеты для всего</title>
+    <!-- Подключение шрифта Inter и Font Awesome 6 (бесплатные иконки) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <!-- Фоновые декоративные размытые круги (glass-атмосфера) -->
+    <div class="blur-circle blur-circle-1"></div>
+    <div class="blur-circle blur-circle-2"></div>
+    <div class="blur-circle blur-circle-3"></div>
+
+    <!-- Шапка (полупрозрачная, стеклянная, фиксированная) -->
+    <header class="glass-header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-shopping-bag"></i>
+                <span>Пакетик нужен?</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#hero">Главная</a>
+                <a href="#products">Пакеты</a>
+                <a href="#about">О нас</a>
+            </nav>
+            <button id="themeToggle" class="theme-toggle" aria-label="Переключить тему">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero-секция -->
+        <section id="hero" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content fade-up">
+                    <span class="hero-badge">Эко-дружественно & Стильно</span>
+                    <h1>Идеальный пакет <br> для каждого дня</h1>
+                    <p>Крафт, биоразлагаемые материалы, яркий дизайн. Пакет, который подчеркнет ваш стиль и заботу о природе.</p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary">Выбрать пакет <i class="fas fa-arrow-right"></i></a>
+                        <a href="#about" class="btn btn-outline">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="hero-image fade-up delay-1">
+                    <div class="glass-icon-large">
+                        <i class="fas fa-bag-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция товаров (карточки) -->
+        <section id="products" class="products">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <span class="section-subtitle">Коллекция</span>
+                    <h2>Пакеты на любой случай</h2>
+                    <p>Прочные, красивые и удобные — выберите свой идеальный вариант</p>
+                </div>
+                <div class="products-grid">
+                    <!-- Карточка товара 1 -->
+                    <div class="product-card glass-card fade-up delay-1">
+                        <div class="product-image">
+                            <i class="fas fa-receipt"></i>
+                        </div>
+                        <h3 class="product-title">Крафтовый пакет</h3>
+                        <p class="product-desc">Натуральная крафт-бумага, высокая прочность, стильный минимализм.</p>
+                        <div class="product-price">299 ₽ <span>/ 10 шт</span></div>
+                        <button class="btn btn-accent order-btn">Заказать <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <!-- Карточка товара 2 -->
+                    <div class="product-card glass-card fade-up delay-2">
+                        <div class="product-image">
+                            <i class="fas fa-hand-peace"></i>
+                        </div>
+                        <h3 class="product-title">Пакет с ручками</h3>
+                        <p class="product-desc">Удобные мягкие ручки, усиленное дно. Для покупок и подарков.</p>
+                        <div class="product-price">450 ₽ <span>/ 10 шт</span></div>
+                        <button class="btn btn-accent order-btn">Заказать <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    <!-- Карточка товара 3 -->
+                    <div class="product-card glass-card fade-up delay-3">
+                        <div class="product-image">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="product-title">Прозрачный ПВХ</h3>
+                        <p class="product-desc">Модный тренд — водонепроницаемый, многоразовый, с ZIP-замком.</p>
+                        <div class="product-price">590 ₽ <span>/ 5 шт</span></div>
+                        <button class="btn btn-accent order-btn">Заказать <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "О нас" / преимущества (стеклянные блоки) -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <span class="section-subtitle">Почему мы</span>
+                    <h2>С заботой о вас и планете</h2>
+                    <p>Каждый пакет — это маленькая история</p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-card glass-card fade-up delay-1">
+                        <div class="benefit-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>Биоразлагаемые</h3>
+                        <p>Наши материалы разлагаются в природных условиях, не нанося вреда экосистеме.</p>
+                    </div>
+                    <div class="benefit-card glass-card fade-up delay-2">
+                        <div class="benefit-icon"><i class="fas fa-truck-fast"></i></div>
+                        <h3>Быстрая доставка</h3>
+                        <p>Доставляем за 1–3 дня по всей России. Каждый заказ в стильной упаковке.</p>
+                    </div>
+                    <div class="benefit-card glass-card fade-up delay-3">
+                        <div class="benefit-icon"><i class="fas fa-palette"></i></div>
+                        <h3>Дизайн в подарок</h3>
+                        <p>Индивидуальный принт? Легко! Сделаем пакет под ваш бренд или событие.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <i class="fas fa-shopping-bag"></i> Пакетик нужен?
+                </div>
+                <p>Стильные пакеты для осознанных людей. Красота в деталях.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Товары</h4>
+                <a href="#products">Крафтовые</a>
+                <a href="#products">С ручками</a>
+                <a href="#products">Прозрачные</a>
+            </div>
+            <div class="footer-col">
+                <h4>Информация</h4>
+                <a href="#">Доставка</a>
+                <a href="#">Оплата</a>
+                <a href="#">Возврат</a>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p><i class="fas fa-envelope"></i> hello@paketik.ru</p>
+                <p><i class="fas fa-phone-alt"></i> +7 (999) 123-45-67</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 «Пакетик нужен?» — ваш идеальный пакет.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Плавное переключение темы (светлая / темная) с использованием CSS-переменных
+        (function() {
+            const toggleBtn = document.getElementById('themeToggle');
+            const body = document.body;
+            
+            // Функция установки темы
+            function setTheme(theme) {
+                if (theme === 'dark') {
+                    body.classList.remove('light-theme');
+                    body.classList.add('dark-theme');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    body.classList.remove('dark-theme');
+                    body.classList.add('light-theme');
+                    localStorage.setItem('theme', 'light');
+                }
+            }
+            
+            // Проверяем сохраненную тему или системные настройки
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                setTheme(savedTheme);
+            } else {
+                // если нет сохраненной темы, используем светлую по умолчанию (уже есть класс light-theme)
+                // дополнительно проверим prefers-color-scheme, но по ТЗ светлая по умолчанию
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (prefersDark) {
+                    setTheme('dark');
+                } else {
+                    setTheme('light');
+                }
+            }
+            
+            // Обработчик кнопки
+            toggleBtn.addEventListener('click', () => {
+                if (body.classList.contains('light-theme')) {
+                    setTheme('dark');
+                } else {
+                    setTheme('light');
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
